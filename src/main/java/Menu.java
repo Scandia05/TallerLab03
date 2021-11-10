@@ -56,12 +56,14 @@ public class Menu {
         System.out.println("[1] Si");
         System.out.println("[2] No");
     }
+
     public static boolean opcionSeleccionada(String ingresoDatos) {
         boolean a = false;
         switch (ingresoDatos) {
             case "1" -> {
                 do {
                     System.out.println("Agregar Productos");
+                    Producto.agregarProducto();
                     a = true;
                     System.out.println("¿Desea ver otro ?");
                     textoSalida();
@@ -82,7 +84,7 @@ public class Menu {
                 do {
                     System.out.println("Modificar el estado del camion");
                     a = true;
-                    System.out.println("Desea ver mas ?");
+                    System.out.println("Desea ver mas opciones?");
                     textoSalida();
                     a = salir();
                 } while (a == true);
@@ -92,7 +94,8 @@ public class Menu {
                 do {
                     System.out.println("Agregar Camiones");
                     a = true;
-                    System.out.println("Desea ver mas ?");
+                    Camion.agregarCamion();
+                    System.out.println("Desea ver mas opciones?");
                     textoSalida();
                     a = salir();
                 } while (a == true);
@@ -102,7 +105,7 @@ public class Menu {
                 do {
                     System.out.println("Quitar Camiones");
                     a = true;
-                    System.out.println("Desea ver mas ?");
+                    System.out.println("Desea ver mas opciones?");
                     textoSalida();
                     a = salir();
                 } while (a == true);
@@ -112,7 +115,7 @@ public class Menu {
                 do {
                     System.out.println("Calcular Producto del flete");
                     a = true;
-                    System.out.println("Desea ver mas ?");
+                    System.out.println("Desea ver mas opciones?");
                     textoSalida();
                     a = salir();
                 } while (a == true);
