@@ -19,9 +19,13 @@ public class Menu {
         System.out.println("*             Bienvenido            *");
         System.out.println("**********************************************************");
         System.out.println("Por favor, seleccione una de las opcíones");
-        System.out.println("[1] ");
-        System.out.println("[2] ");
-        System.out.println("[3] ");
+        System.out.println("[1] Agregar Productos");
+        System.out.println("[2] Quitar Productos");
+        System.out.println("[3] Modificar el estado del Camión");
+        System.out.println("[4] Agregar Camiones");
+        System.out.println("[5] Quitar Camiones");
+        System.out.println("[6] Calcular precio del Flete");
+        System.out.println("[7] Salir");
     }
 
     public static boolean salir() {
@@ -57,7 +61,7 @@ public class Menu {
         switch (ingresoDatos) {
             case "1" -> {
                 do {
-                    System.out.println("Lista de Comidas Vegetarianas");
+                    System.out.println("Agregar Productos");
                     a = true;
                     System.out.println("¿Desea ver otro ?");
                     textoSalida();
@@ -66,7 +70,7 @@ public class Menu {
             }
             case "2" -> {
                 do {
-                    System.out.println("Lista de Comida Vegana");
+                    System.out.println("Quitar Productos");
                     a = true;
                     System.out.println("Desea ver mas ?");
                     textoSalida();
@@ -75,6 +79,46 @@ public class Menu {
                 break;
             }
             case "3" -> {
+                do {
+                    System.out.println("Modificar el estado del camion");
+                    a = true;
+                    System.out.println("Desea ver mas ?");
+                    textoSalida();
+                    a = salir();
+                } while (a == true);
+                break;
+            }
+            case "4" -> {
+                do {
+                    System.out.println("Agregar Camiones");
+                    a = true;
+                    System.out.println("Desea ver mas ?");
+                    textoSalida();
+                    a = salir();
+                } while (a == true);
+                break;
+            }
+            case "5" -> {
+                do {
+                    System.out.println("Quitar Camiones");
+                    a = true;
+                    System.out.println("Desea ver mas ?");
+                    textoSalida();
+                    a = salir();
+                } while (a == true);
+                break;
+            }
+            case "6" -> {
+                do {
+                    System.out.println("Calcular Producto del flete");
+                    a = true;
+                    System.out.println("Desea ver mas ?");
+                    textoSalida();
+                    a = salir();
+                } while (a == true);
+                break;
+            }
+            case "7" -> {
                 System.out.println("Desea Salir?");
                 textoSalida();
                 a=salir();
